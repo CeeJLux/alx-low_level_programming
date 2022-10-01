@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -8,8 +7,8 @@
  *
  * Return: Always 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	printf("argc = %d\n", argc -1);
+	printf("%d\n", argc -1);
 	return 0;
 }
